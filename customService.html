@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="custom">
+
+<head>
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="customService.js"></script>
+  <script src="stringService.js"></script>
+</head>
+
+<body ng-controller="myController">
+  <table border=1>
+    <tr>
+      <td>Your String</td>
+      <td>
+        <input type="text" ng-model="input" placeholder="Enter your String" /> </td>
+    </tr>
+    <tr>
+      <td>Result</td>
+      <td>
+        <input type="text" ng-model="output" placeholder="Result is " />
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input type="button" ng-click="transformString(input)" value="Process String">
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
